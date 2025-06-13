@@ -2,9 +2,29 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
+import streamlit as st
 
 # Título
 st.title("Simulación de Adsorción en un Tanque Agitado Continuo")
+
+from PIL import Image
+
+
+
+# Cargar imagen
+imagen = Image.open("proceso.png")
+
+# Redimensionar al 75%
+ancho, alto = imagen.size
+imagen_redimensionada = imagen.resize((int(ancho * 0.5), int(alto * 0.5)))
+
+# Título (igual al estilo de "Parámetros del sistema")
+st.subheader("Esquema del proceso")  # También podés usar st.header
+
+# Centrar imagen
+st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+st.image(imagen_redimensionada, use_container_width=False)
+st.markdown("</div>", unsafe_allow_html=True)
 
 # Parámetros operativos
 st.sidebar.header("Parámetros del sistema")
@@ -126,6 +146,7 @@ if y_teo is not None and q_teo is not None:
 
 fig.tight_layout()
 st.pyplot(fig)
+
 
 
 
