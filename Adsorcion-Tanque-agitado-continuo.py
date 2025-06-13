@@ -25,13 +25,13 @@ st.markdown("</div>", unsafe_allow_html=True)
 
 # Parámetros operativos
 st.sidebar.header("Parámetros del sistema")
-V = st.sidebar.number_input("Volumen del reactor (L)", value=0.5, step=0.1)
-e = st.sidebar.number_input("Porosidad (-)", value=0.75, step=0.05)
-H = st.sidebar.number_input("Caudal de la solución de alimentación (L/h)", value=1.0, step=0.1)
-yF = st.sidebar.number_input("Concentración de entrada (g/L)", value=0.64, step=0.02)
-a = st.sidebar.number_input("Superficie del adsorbente por unidad de volumen del tanque  (1/dm)", value=1.3, step=0.1)
-k = st.sidebar.number_input("Coeficiente de tranasferencia de materia (dm/h)", value=25.0, step=5.0)
-N = st.sidebar.number_input("Número de puntos (-)", value=1000, step=100)
+V = st.sidebar.number_input("Volumen del reactor V (L)", value=0.5, step=0.1)
+e = st.sidebar.number_input("Porosidad (\u03B5) (-)", value=0.75, step=0.05)
+H = st.sidebar.number_input("Caudal de la solución de alimentación H (L/h)", value=1.0, step=0.1)
+yF = st.sidebar.number_input("Concentración de entrada yF (g/L)", value=0.64, step=0.02)
+a = st.sidebar.number_input("Superficie del adsorbente por unidad de volumen del tanque a (1/dm)", value=1.3, step=0.1)
+k = st.sidebar.number_input("Coeficiente de transferencia de materia k (dm/h)", value=25.0, step=5.0)
+N = st.sidebar.number_input("Número de puntos N (-)", value=1000, step=100)
 
 # Selección de isoterma
 st.sidebar.header("Isoterma de adsorción")
