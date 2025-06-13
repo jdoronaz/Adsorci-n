@@ -8,8 +8,6 @@ st.title("Simulación de Adsorción en un Tanque Agitado Continuo")
 
 from PIL import Image
 
-
-
 # Cargar imagen
 imagen = Image.open("proceso.png")
 
