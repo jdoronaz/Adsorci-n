@@ -13,7 +13,7 @@ imagen = Image.open("proceso.png")
 
 # Redimensionar al 75%
 ancho, alto = imagen.size
-imagen_redimensionada = imagen.resize((int(ancho * 0.5), int(alto * 0.5)))
+imagen_redimensionada = imagen.resize((int(ancho * 0.6), int(alto * 0.6)))
 
 # Título (igual al estilo de "Parámetros del sistema")
 st.subheader("Esquema del proceso")  # También podés usar st.header
