@@ -150,7 +150,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align: center; font-size: 0.9em;'>
-        This simulator was developed by Jesica D. Oroná (2025) for academic purposes, based on the adsorption process in a continuously stirred tank..<br>
+        This simulator was developed by Jesica D. Oroná (2025) for academic purposes.<br>
         Universidad Nacional del Litoral, Argentina.
     </div>
     """,
