@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
-import streamlit as st
 
 # Título
 st.title("Simulación de Adsorción en un Tanque Agitado Continuo")
@@ -146,7 +145,6 @@ if y_teo is not None and q_teo is not None:
 
 fig.tight_layout()
 st.pyplot(fig)
-
 
 
 
